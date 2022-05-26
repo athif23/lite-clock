@@ -1,3 +1,6 @@
+#ifdef _WIN32
+#pragma comment(linker, "/SUBSYSTEM:windows /ENTRY:mainCRTStartup")
+#endif
 
 #define SDL_STB_FONT_IMPL
 #include "utils.h"
@@ -190,7 +193,7 @@ int main(int argc, char** argv)
 		toggleDate.draw();
 
 		// Render Adzan Reminder
-		tReminder.draw(windowWidth - wReminder - 13, 10);
+		//tReminder.draw(windowWidth - wReminder - 13, 10);
 
 		// Render button
 		btnClose.draw();
