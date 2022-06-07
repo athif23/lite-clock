@@ -3,15 +3,15 @@
 const char* HIJRI_MONTH_NAMES[12] = {
     "Muharram",
     "Safar",
-    "Rabi’ al-Awwal",
-    "Rabi’ al-Thani",
-    "Jumada al-Ula",
-    "Jumada al-Akhirah",
+    "Rabi' al-'Awwal",
+    "Rabi' ath-Thani",
+    "Jumada al-'Ula",
+    "Jumada ath-'Akhirah",
     "Rajab",
-    "Sha’ban",
+    "Sha'ban",
     "Ramadhan",
     "Shawwal",
-    "Dhu al-Qi’dah",
+    "Dhu al-Qa'dah",
     "Dhu al-Hijjah",
 };
 
@@ -75,5 +75,5 @@ struct Date
 {
     time_t rawtime;
     tm timeinfo{};
-    char buffer[80] = "Monday, 23 September 2001";
+    char buffer[500] = "Monday, 23 September 2001";
 };

@@ -41,12 +41,9 @@ void Text::bindRenderer(SDL_Renderer* renderer) {
 
 void Text::mLoadFont() {
 	sttfont_memory inter;
-	sttfont_memory interBold;
 	readFileRaw_toMemory("fonts/Inter-Regular.ttf", inter);
-	readFileRaw_toMemory("fonts/Inter-Bold.ttf", interBold);
 
 	mFC.loadFontManaged(inter);
-	mFC.addFormatFontManaged(sttfont_format::FORMAT_BOLD, interBold);
 }
 
 void Text::draw(int const x, int const y, const char* text) {
